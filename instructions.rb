@@ -10,11 +10,11 @@ class Instructions
         #1.red? 2.green? etc etc
         
         
-        The code maker will choose four to create a 'master code'. For example,
+        The code maker will choose four to create a 'Master Code'. For example,
         #1.red? 2.green? etc etc
         
         There can be more than one of the same number/color.
-        In order to win, the code breaker needs to guess the 'master code' in 12 or less turns.
+        In order to win, the Code Breaker needs to guess the 'Master Code' in 12 or less turns.
         
         
         Clues:
@@ -32,6 +32,3 @@ class Instructions
         HEREDOC
       end
     end
-
-x = Instructions.new
-puts x.instructions

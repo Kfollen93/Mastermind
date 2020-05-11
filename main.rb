@@ -1,3 +1,5 @@
+require_relative 'instructions.rb'
+puts Instructions.new.instructions
 #This will hold all the `require` files to run the program, and start the game with Game.new.
 #Also my to-do list.
 
@@ -9,6 +11,8 @@ main.rb
 
 game.rb
  -Game class
+ def initialize
+ end
 
 
 create_board.rb
@@ -108,4 +112,4 @@ end
 
 
 
-end
+=end

@@ -31,5 +31,18 @@ class Instructions
       Press '2' to be the Code BREAKER
 
     HEREDOC
+
+  end
+
+  def start_game
+    @start = gets.chomp
+    if @start == "1"
+    puts "cool"
+    elsif @start == "2"
+      pc = Computer.new
+      pc.randomize
+      pc.computer_code_set
     end
-    end
+  end
+
+end

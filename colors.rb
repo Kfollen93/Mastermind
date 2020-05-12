@@ -1,16 +1,19 @@
+# frozen_string_literal: true
 
-class String
-def red;            "\e[31m#{self}\e[0m" end
-def green;          "\e[32m#{self}\e[0m" end
-def yellow;         "\e[33m#{self}\e[0m" end
-def blue;           "\e[34m#{self}\e[0m" end
-def magenta;        "\e[35m#{self}\e[0m" end
-def cyan;           "\e[36m#{self}\e[0m" end
-end
+def code_colors(number)
+  {
+    '1' => "\e[41m  1 \e[0m" ' ', # red
+    '2' => "\e[42m  2  \e[0m" ' ', # green
+    '3' => "\e[43m  3  \e[0m" ' ', # yellow
+    '4' => "\e[44m  4  \e[0m" ' ', # blue
+    '5' => "\e[45m  5  \e[0m" ' ', # magenta
+    '6' => "\e[46m  6  \e[0m" ' ' # cyan
+  }[number]
+  end
 
-one = "1".red
-two = "2".green
-three = "3".yellow
-four = "4".blue
-five = "5".magenta
-six = "6".cyan
+def clue_colors(number)
+  {
+    '?' => "\e[41m  ?  \e[0m" ' ', # red
+    '!' => "\e[42m  !  \e[0m" ' ', # green
+  }[number]
+  end

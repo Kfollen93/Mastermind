@@ -40,7 +40,6 @@ class Instructions
     puts "cool"
     elsif @start == "2"
       pc = Computer.new
-      pc.randomize
       pc.computer_code_set
     end
   end

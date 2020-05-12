@@ -2,8 +2,15 @@
 
 require_relative 'instructions.rb'
 require_relative 'colors.rb'
+require_relative 'computer.rb'
+require_relative 'player.rb'
 
-puts Instructions.new.instructions
+game = Instructions.new
+puts game.instructions
+puts game.start_game
+player_turns = Player.new
+player_turns.player_guess
+
 # This will hold all the `require` files to run the program, and start the game with Game.new.
 # Also my to-do list.
 

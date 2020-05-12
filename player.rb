@@ -9,8 +9,12 @@ class Player
         puts 'Your guess must only be four digits, using 1 - 6.'
         guess = gets.chomp
       end
+      puts "The method would go here to give feedback" #I think this would work? call feedback method?
+      if guess == @random_nums
+        puts "You win!"
+      elsif i >= 12
+        puts "So close! The answer was #{@random_nums}"
+      end
     end
   end
 end
-
-x = Player.new.player_guess

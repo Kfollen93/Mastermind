@@ -6,6 +6,7 @@ class Computer
   end
 
   def computer_code_set
+    "...Setting Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }
     puts 'The Computer has set the Master Code. Try to break it.'
   end
 

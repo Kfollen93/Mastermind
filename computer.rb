@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+#Human is the Code Breaker in this case.
 class Computer
   def randomize # computer selects 4 randoms numbers from 1 - 6
     @random_nums = 4.times.map { Random.rand(1..6) }.to_a
@@ -12,9 +13,8 @@ class Computer
 
   # Method providing feedback on how good the guesses were each turn
   def feedback
-end
-end
+  end
 
-x = Computer.new
-x.randomize
-x.computer_code_set
+  def code_reveal #if code is guessed, reveal and end game. if end of turns reached reveal and end game.
+  end
+end

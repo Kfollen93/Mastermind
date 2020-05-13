@@ -11,7 +11,7 @@ class Player
         puts 'Your guess must only be four digits, using 1 - 6.'
         guess = gets.chomp
       end
-      puts "The method would go here to give feedback" #I think this would work? call feedback method?
+      puts "Clues: " #I think this would work? call feedback method?
       if guess == Computer.display #Works! but need to stop loop then.
         puts "Wow good job! You broke the Master Code!"
         break #Stops the upto method if you get the answer correct.

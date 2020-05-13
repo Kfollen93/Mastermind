@@ -35,15 +35,15 @@ class Instructions
   end
 
   def start_game
-    @start = gets.chomp
-    while @start != "1" || @start != "2"
-      break if @start == "1" || @start == "2"
+    $start = gets.chomp
+    while $start != "1" || $start != "2"
+      break if $start == "1" || $start == "2"
       puts 'Please choose (1) Code Maker or (2) Code Breaker'
-      @start = gets.chomp
+      $start = gets.chomp
     end
-    if @start == "1"
-    puts "cool"
-    elsif @start == "2"
+    if $start == "1"
+    puts "Placeholder"
+    elsif $start == "2"
       pc = Computer.new
       pc.computer_code_set
     end

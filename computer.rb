@@ -9,7 +9,8 @@ class Computer
   end
 
   def self.display
-    @@random_nums
+    @@master_comp_code = @@random_nums*"" #Asterik and quotes changes array to String with no spaces.
+    @@master_comp_code
   end
 
   # Method providing feedback on how good the guesses were each turn

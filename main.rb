@@ -9,7 +9,10 @@ game = Instructions.new
 puts game.instructions
 puts game.start_game
 player_turns = Player.new
-player_turns.player_guess
+$start == "1" ? "Placeholder for Code Maker" : player_turns.player_guess
+
+
+
 
 
 # *****MASTERMIND*****

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require_relative 'computer.rb'
 
 class Player
   def player_guess
@@ -10,10 +11,12 @@ class Player
         guess = gets.chomp
       end
       puts "The method would go here to give feedback" #I think this would work? call feedback method?
-      if guess == @random_nums#These @random_nums are blank. use modules? create this as a separate method?
+      if guess == Computer.display #Will this work? this is an array.
         puts "You win!"
       elsif i >= 12
-        puts "So close! The answer was #{@random_nums}"#These @random_nums are blank.
+        print "So close! The answer was:\n "
+        print Computer.display
+        puts " "
       end
     end
   end

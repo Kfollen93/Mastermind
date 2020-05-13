@@ -36,6 +36,11 @@ class Instructions
 
   def start_game
     @start = gets.chomp
+    while @start != "1" || @start != "2"
+      break if @start == "1" || @start == "2"
+      puts 'Please choose (1) Code Maker or (2) Code Breaker'
+      @start = gets.chomp
+    end
     if @start == "1"
     puts "cool"
     elsif @start == "2"

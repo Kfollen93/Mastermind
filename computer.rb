@@ -5,7 +5,7 @@ class Computer
   def computer_code_set
     "...Setting Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }
     @random_nums = 4.times.map { Random.rand(1..6) }.to_a # computer selects 4 randoms numbers from 1 - 6
-    puts "The Computer has set the Master Code #{@random_nums}. Try to break it."
+    puts "The Computer has set the Master Code #{@random_nums}. Try to break it." #should this be separate method?
   end
 
   # Method providing feedback on how good the guesses were each turn

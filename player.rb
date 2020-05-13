@@ -10,10 +10,10 @@ class Player
         guess = gets.chomp
       end
       puts "The method would go here to give feedback" #I think this would work? call feedback method?
-      if guess == @random_nums
+      if guess == @random_nums#These @random_nums are blank. use modules? create this as a separate method?
         puts "You win!"
       elsif i >= 12
-        puts "So close! The answer was #{@random_nums}"
+        puts "So close! The answer was #{@random_nums}"#These @random_nums are blank.
       end
     end
   end

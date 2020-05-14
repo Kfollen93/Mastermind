@@ -6,15 +6,16 @@ class Player
     1.upto(12) do |i|
       puts "Turn #{i}: Type in four numbers (1 - 6) to guess the code and press 'Enter'."
       puts Computer.display
-      guess = gets.chomp #I'll need to turn this into .split(//) for each num in array to compare
-      until guess =~ /\A[1-6]{4}\z/
-        puts 'Your guess must only be four digits, using 1 - 6.'
-        guess = gets.chomp
-      end
+      #Converts guess to an array of strings, then maps them all to be integers.
+      guess = gets.chomp.split(//).map!(&:to_i) 
+      #until guess =~ /\A[1-6]{4}\z/ #Regex needs to be re done to fit an array
+      #  puts 'Your guess must only be four digits, using 1 - 6.'
+      #  guess = gets.chomp.split(//).map!(&:to_i) 
+      #end
       puts "Clues: " #I think this would work? call feedback method?
       if guess == Computer.display
         puts "Wow good job! You broke the Master Code!"
-        break #Stops the upto method if you get the answer correct.
+        break #Stops the upto method if you get the answer correct (before 12 times happen).
       elsif i >= 12
         print "So close! The answer was:\n "
         print Computer.display

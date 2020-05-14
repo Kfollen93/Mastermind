@@ -7,10 +7,11 @@ class Player
       puts "Turn #{i}: Type in four numbers (1 - 6) to guess the code and press 'Enter'."
       #Converts guess to an array of strings, then maps them all to be integers.
       $guess = gets.chomp.split(//).map!(&:to_i) 
-      #until $guess =~ /\A[1-6]{4}\z/ #Regex needs to be re done to fit an array, or let it include numbers, commas, and the []
-      #  puts 'Your guess must only be four digits, using 1 - 6.'
-      #  $guess = gets.chomp.split(//).map!(&:to_i) 
-      #end
+      print $guess
+      until $guess =~ /\A[1-6]{4}\z/ #Regex needs to be re done to fit an array, or let it include numbers, commas, and the []
+        puts 'Your guess must only be four digits, using 1 - 6.'
+        $guess = gets.chomp.split(//).map!(&:to_i) 
+      end
       puts " "
       puts Clues.feedback
       if $guess == Computer.display

@@ -10,7 +10,7 @@ class Instructions
 
       There are six different numbers:
 
-      #{code_colors('1')} #{code_colors('2')} #{code_colors('3')} #{code_colors('4')} #{code_colors('5')} #{code_colors('6')}
+      1   2   3   4   5   6
 
     
       The Code Maker will choose four digits to create a 'Master Code' from these numbers (1 - 6).

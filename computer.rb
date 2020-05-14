@@ -9,7 +9,7 @@ class Computer
   end
 
   def self.display
-    @@master_comp_code = @@random_nums*"" #Asterik and quotes changes array to String with no spaces.
-    @@master_comp_code #however, I'll prob need to keep this as an array to check each num.
+    #@@master_comp_code = @@random_nums*"" #Asterik and quotes changes array to String with no spaces.
+    @@random_nums #Outputs an array. 
   end
 end

@@ -1,9 +1,9 @@
 class Clues
-    def feedback
-        matches = guess.map.with_index do |value, index|
-        if @@random_nums[index] == value
+    def self.feedback
+        matches = $guess.map.with_index do |value, index|
+        if $random_nums[index] == value
             "!"
-        elsif @@random_nums.include?(value)
+        elsif $random_nums.include?(value)
             "?"
         else
             nil

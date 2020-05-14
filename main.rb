@@ -4,6 +4,7 @@ require_relative 'instructions.rb'
 require_relative 'colors.rb'
 require_relative 'computer.rb'
 require_relative 'player.rb'
+require_relative 'clues.rb'
 
 game = Instructions.new
 puts game.instructions

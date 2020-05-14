@@ -20,7 +20,7 @@ class Instructions
 
       Upon each guess there will be clues provided:
 
-      #{clue_colors("!")} Represents a correct number in the correct location.
+      #{clue_colors("!")} Represents a correct number, in the correct location.
       #{clue_colors("?")} Represents a correct number, but in the wrong location.
       No feedback for a number that is not part of the Master Code (which is a hint).
 

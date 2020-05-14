@@ -4,12 +4,11 @@
 class Computer
   def computer_code_set
     "...Setting Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }
-    @@random_nums = 4.times.map { Random.rand(1..6) }.to_a 
+    $random_nums = 4.times.map { Random.rand(1..6) }.to_a 
     puts "The Computer has set the Master Code. Try to break it." 
   end
 
   def self.display
-    #@@master_comp_code = @@random_nums*"" #Asterik and quotes changes array to String with no spaces.
-    @@random_nums #Outputs an array. 
+    $random_nums
   end
 end

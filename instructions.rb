@@ -13,17 +13,16 @@ class Instructions
       1   2   3   4   5   6
 
     
-      The Code Maker will choose four digits to create a 'Master Code' from these numbers (1 - 6).
-      There can be more than one of the same number, but only 4 digits in length.
+      The Code Maker selects four digits to create a 'Master Code'.
+      There can be two or more of the same number.
 
       The Code Breaker needs to guess the 'Master Code' in 12 turns or less.
-      The Code Breaker is only trying to match the numbers, the colors are purely visual.
 
       Upon each guess there will be clues provided:
 
-      #{clue_colors("!")} Represents you have a correct number in the correct location.
-      #{clue_colors("?")} Represents you have a correct number, but in the wrong location.
-      There is no feedback for a number that is not part of the Master Code (which is a hint).
+      #{clue_colors("!")} Represents a correct number in the correct location.
+      #{clue_colors("?")} Represents a correct number, but in the wrong location.
+      No feedback for a number that is not part of the Master Code (which is a hint).
 
       START:
 

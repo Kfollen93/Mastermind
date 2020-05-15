@@ -13,7 +13,8 @@ class Player
       end
       puts " "
       $guess_array = $guess.split(//).map!(&:to_i) #Converts guess to an array to compare with Master Code.
-      puts Clues.feedback
+      puts Clues.exact_matches
+      puts Clues.correct_numbers
       if $guess_array == Computer.master_code
         puts "Wow good job! You broke the Master Code!"
         break #Stops the upto method if you get the answer correct (before 12 times happen).

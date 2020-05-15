@@ -14,8 +14,6 @@ class Clues
   end
 
   def self.correct_numbers
-    @temp_master = $master_code.clone
-    @temp_guess = $guess_array.clone
     correct = 0
     @temp_guess.each_with_index do | value, index |
       if @temp_guess[index] != "!" && @temp_master.include?(@temp_guess[index])

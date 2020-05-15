@@ -1,23 +1,26 @@
 class Clues
   def self.exact_matches
+    @temp_master = $master_code.clone
     exact = 0
-    $master_code.each_with_index do | value, index |
+    @temp_master.each_with_index do | value, index |
       if value == $guess_array[index]
         exact += 1 
-        $master_code[index] = "!"
+        @temp_master[index] = "!"
         $guess_array[index]  = "!"
       end
     end
     exact
+    #print "#{clue_colors("!")}"
   end
 
   def self.correct_numbers
+    @temp_master = $master_code.clone
     correct = 0
     $guess_array.each_with_index do | item, index |
-      if $guess_array[index] != "!" && $master_code.include?($guess_array[index])
+      if $guess_array[index] != "!" && @temp_master.include?($guess_array[index])
         correct += 1
-        remove = $master_code.find_index($guess_array[index])
-        $master_code[remove] = "?"
+        remove = @temp_master.find_index($guess_array[index])
+        @temp_master[remove] = "?"
         $guess_array[index]  = "?"
       end
     end

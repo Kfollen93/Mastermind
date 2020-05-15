@@ -8,7 +8,7 @@ class Computer
     puts "The Computer has set the Master Code. Try to break it." 
   end
 
-  def self.display
+  def self.master_code
     $random_nums
   end
 end

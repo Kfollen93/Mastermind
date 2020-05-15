@@ -2,9 +2,9 @@ class Clues
     def self.feedback
         #This method doesn't work. There's some edge cases and more.
         matches = $guess_array.map.with_index do |value, index|
-        if $random_nums[index] == value
+        if $master_code[index] == value
             print "#{clue_colors("!")}"
-        elsif $random_nums.include?(value)
+        elsif $master_code.include?(value)
             print "#{clue_colors("?")}"
         else
             nil

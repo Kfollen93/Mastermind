@@ -6,6 +6,7 @@ class Player
     1.upto(12) do |i|
       puts "Turn #{i}: Type in four numbers (1 - 6) to guess the code and press 'Enter'."
       #Converts guess to an array of strings, then maps them all to be integers.
+      print Computer.master_code
       $guess = gets.chomp
       until $guess =~ /\A[1-6]{4}\z/ #Regex for guess as a String.
         puts 'Your guess must only be four digits, using 1 - 6.'

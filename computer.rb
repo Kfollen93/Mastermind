@@ -24,4 +24,8 @@ class Computer
     $player_master_array = $player_master.split(//).map!(&:to_i)
     "...Storing the Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }
   end
+
+  def self.player_master_code
+    $player_master_array 
+  end
 end

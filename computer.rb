@@ -21,6 +21,7 @@ class Computer
       puts 'Your code must only be four digits, using 1 - 6.'
       $player_master = gets.chomp
     end
+    $player_master_array = $player_master.split(//).map!(&:to_i)
     "...Storing the Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }
   end
 end

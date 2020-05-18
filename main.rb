@@ -5,12 +5,15 @@ require_relative 'colors.rb'
 require_relative 'computer.rb'
 require_relative 'player.rb'
 require_relative 'clues.rb'
+require_relative 'computer_logic.rb'
+require_relative 'computer_clues.rb'
 
 game = Instructions.new
 puts game.instructions
 puts game.start_game
 player_turns = Player.new
-$start == "1" ? "Placeholder for Code Maker" : player_turns.player_guess
+pc_logic = ComputerLogic.new
+$start == "1" ? pc_logic.computer_guess : player_turns.player_guess
 
 
 

@@ -2,8 +2,10 @@
 class ComputerLogic
     def computer_guess
       1.upto(12) do |i|
-        puts "Turn #{i}: Type in four numbers (1 - 6) to guess the code and press 'Enter'."
-        #$guess = gets.chomp This becomes auto from comp logic, random num? 
+        puts "Turn #{i}: The Computer's guess is\n"
+        #$guess = gets.chomp This becomes auto from comp logic, random num?
+        first_guess = 4.times.map { Random.rand(1..6) }.to_a 
+        print first_guess
         until $guess =~ /\A[1-6]{4}\z/ #Probably can remove this? 
           puts 'Your guess must only be four digits, using 1 - 6.'
           $guess = gets.chomp

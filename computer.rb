@@ -15,4 +15,10 @@ class Computer
   end
 
   def player_set_code
+    puts "Type the Master Code, and press 'Enter' to set it."
+    player_master = gets.chomp
+    until player_master =~ /\A[1-6]{4}\z/
+      puts 'Your code must only be four digits, using 1 - 6.'
+      player_master = gets.chomp
+    end
 end

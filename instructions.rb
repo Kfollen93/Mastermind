@@ -41,7 +41,8 @@ class Instructions
       $start = gets.chomp
     end
     if $start == "1"
-    puts "Placeholder"
+      pc = Computer.new
+      pc.player_set_code
     elsif $start == "2"
       pc = Computer.new
       pc.computer_code_set

@@ -4,8 +4,9 @@ class ComputerLogic
       1.upto(12) do |i|
         puts "Turn #{i}: The Computer's guess is\n"
         $guess = 4.times.map { Random.rand(1..6) }.to_a 
-        #It starts with random, if it gets ! it does X, if it gets ?, it does X, if none, it randoms those again.
         print $guess
+        #It starts with random, if it gets ! it does X, if it gets ?, it does X, if none, it randoms those again.
+        #if $guess ==
         puts " "
         #Will computer following guess enter as string or array? First_guess is an Array.
         #$guess_array = $guess.split(//).map!(&:to_i) #Converts guess to an array to compare with Master Code.

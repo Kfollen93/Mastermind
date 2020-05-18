@@ -17,10 +17,10 @@ class Computer
   def player_set_code
     puts "Type the Master Code, and press 'Enter' to set it."
     $player_master = gets.chomp
-    "...Storing the Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }
     until $player_master =~ /\A[1-6]{4}\z/
       puts 'Your code must only be four digits, using 1 - 6.'
       $player_master = gets.chomp
     end
+    "...Storing the Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }
   end
 end

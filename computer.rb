@@ -10,7 +10,7 @@ class Computer
     puts "The Computer has set the Master Code. Try to break it." 
   end
 
-  def self.master_code #Rename, computer_master_code
+  def self.computer_master_code #Rename, computer_master_code
     $master_code
   end
 

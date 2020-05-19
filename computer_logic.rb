@@ -2,7 +2,7 @@
 class ComputerLogic
     def computer_guess
       1.upto(12) do |i|
-        puts "Turn #{i}: The Computer's guess is\n"
+        puts "Turn #{i}: The Computer's guess is...\n"#.each_char { |c| putc c ; sleep 0.10 }
         $guess = 4.times.map { Random.rand(1..6) }.to_a 
         print $guess
         #It starts with random, if it gets ! it does X, if it gets ?, it does X, if none, it randoms those again.

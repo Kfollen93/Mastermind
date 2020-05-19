@@ -8,8 +8,6 @@ class ComputerLogic
         #It starts with random, if it gets ! it does X, if it gets ?, it does X, if none, it randoms those again.
         #if $guess ==
         puts " "
-        #Will computer following guess enter as string or array? First_guess is an Array.
-        #$guess_array = $guess.split(//).map!(&:to_i) #Converts guess to an array to compare with Master Code.
         ComputerClues.exact_matches
         ComputerClues.correct_numbers
         puts " "

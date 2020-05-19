@@ -3,7 +3,7 @@
 class Select
   #Human is Code Breaker
   def computer_set_code
-    "...Setting Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }
+    "...Setting Master Code.\n".each_char { |c| putc c ; sleep 0.10 }
     $master_code = 4.times.map { Random.rand(1..6) }.to_a 
     puts "The Computer has set the Master Code. Try to break it." 
   end
@@ -21,7 +21,7 @@ class Select
       $player_master = gets.chomp
     end
     $player_master_array = $player_master.split(//).map!(&:to_i)
-    "...Storing the Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }
+    "...Storing the Master Code.\n".each_char { |c| putc c ; sleep 0.10 }
   end
 
   def self.player_master_code

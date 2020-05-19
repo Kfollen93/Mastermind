@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-#This file should have a new name, something like "selection", to choose whether maker or breaker.
-#The class should also be named "Select".
 class Select
   def computer_set_code
     "...Setting Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }

@@ -15,13 +15,13 @@ class Player
       Clues.exact_matches
       Clues.correct_numbers
       puts " "
-      if $guess_array == Computer.computer_master_code
+      if $guess_array == Select.computer_master_code
         puts "Wow good job! You broke the Master Code!"
         break #Stops the upto method if you get the answer correct (before 12 times happen).
       elsif i >= 12
         print "So close! The answer was:\n "
         puts " "
-        print Computer.computer_master_code
+        print Select.computer_master_code
         puts " "
       end
     end

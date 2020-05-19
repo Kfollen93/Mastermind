@@ -2,8 +2,7 @@
 
 #This file should have a new name, something like "selection", to choose whether maker or breaker.
 #The class should also be named "Select".
-#Rename methods more clearly for when it's player or computer related.
-class Computer
+class Select
   def computer_set_code
     "...Setting Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }
     $master_code = 4.times.map { Random.rand(1..6) }.to_a 

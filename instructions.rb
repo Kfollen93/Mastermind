@@ -41,10 +41,10 @@ class Instructions
       $start = gets.chomp
     end
     if $start == "1"
-      pc = Computer.new
+      pc = Select.new
       pc.player_set_code
     elsif $start == "2"
-      pc = Computer.new
+      pc = Select.new
       pc.computer_set_code
     end
   end

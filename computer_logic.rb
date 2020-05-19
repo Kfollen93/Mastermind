@@ -17,7 +17,7 @@ class ComputerLogic
         elsif i >= 12
           print "You stumped the Computer, good job! The answer was:\n "
           puts " "
-          print Computer.player_master_code
+          print Select.player_master_code
           puts " "
         end
       end

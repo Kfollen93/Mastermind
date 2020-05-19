@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Select
+  #Human is Code Breaker
   def computer_set_code
     "...Setting Master Code.\n".each_char { |c| putc c ; sleep 0.10; $stdout.flush }
     $master_code = 4.times.map { Random.rand(1..6) }.to_a 
@@ -11,6 +12,7 @@ class Select
     $master_code
   end
 
+  #Human is Code Maker
   def player_set_code
     puts "Type the Master Code, and press 'Enter' to set it."
     $player_master = gets.chomp

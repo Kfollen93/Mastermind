@@ -24,6 +24,7 @@ class Select
 	"...Storing the Master Code.\n".each_char { |c| putc c ; sleep 0.10 }
 end
 
-def self.player_master_code
-	$player_master_array 
+  def self.player_master_code
+	  $player_master_array 
+  end
 end

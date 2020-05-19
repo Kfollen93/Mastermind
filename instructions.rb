@@ -45,7 +45,7 @@ class Instructions
       pc.player_set_code
     elsif $start == "2"
       pc = Computer.new
-      pc.computer_code_set
+      pc.computer_set_code
     end
   end
 

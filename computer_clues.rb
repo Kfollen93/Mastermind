@@ -24,4 +24,5 @@ class ComputerClues
 			end
 		end
 		correct.times{print clue_colors("?")}
-	end
+  end
+end

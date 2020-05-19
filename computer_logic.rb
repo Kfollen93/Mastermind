@@ -30,4 +30,5 @@ class ComputerLogic
 				end
 			end
 		end
-	end
+  end
+end

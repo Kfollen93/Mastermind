@@ -6,7 +6,14 @@ class ComputerLogic
         $guess = 4.times.map { Random.rand(1..6) }.to_a 
         print $guess
         #It starts with random, if it gets ! it does X, if it gets ?, it does X, if none, it randoms those again.
+        #$guess.each_with_index do | value, index |
+        #  if value == $player_master_array[index]
+        #    $guess == value
+        #    $guess = 3.times.map { Random.rand(1..6) }.to_a 
+        #  end
+        #end
         #if $guess ==
+        
         puts " "
         ComputerClues.exact_matches
         ComputerClues.correct_numbers

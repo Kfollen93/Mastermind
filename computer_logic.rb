@@ -2,7 +2,7 @@
 class ComputerLogic
   def computer_guess
     1.upto(12) do |i|
-      puts "Turn #{i}: The Computer's guess is...\n".each_char { |c| putc c ; sleep 0.05 }
+      "Turn #{i}: The Computer's guess is...\n".each_char { |c| putc c ; sleep 0.05 }
       $guess = generate_guess($guess)
       print $guess
       puts " "
@@ -13,16 +13,14 @@ class ComputerLogic
         puts "The Computer cracked your code!"
         break #Stops the upto method if you get the answer correct (before 12 times happen).
       elsif i >= 12
-        print "You stumped the Computer, good job! The answer was:\n "
-        puts " "
-        print Select.player_master_code
+        print "You stumped the Computer, good job!"
         puts " "
       end
     end
   end
 
   def generate_guess(guess)
-    if guess.nil?
+    if guess.nil? #returns true on first loop, only executes once.
       4.times.map { Random.rand(1..6) }.to_a
     else
       guess.map.with_index do |num, index|

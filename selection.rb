@@ -22,7 +22,7 @@ class Select
 	end
 	$player_master_array = $player_master.split(//).map!(&:to_i)
 	"...Storing the Master Code.\n".each_char { |c| putc c ; sleep 0.10 }
-end
+	end
 
   def self.player_master_code
 	  $player_master_array 

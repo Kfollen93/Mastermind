@@ -1,7 +1,7 @@
 class ComputerLogic
 	def computer_guess
 		1.upto(12) do |i|
-			"Turn #{i}: The Computer's guess is...\n".each_char { |c| putc c ; sleep 0.05 }
+			"Turn #{i}: The Computer's guess is...\n"#.each_char { |c| putc c ; sleep 0.05 }
 			$guess = generate_guess($guess)
 			print $guess
 			puts " "
@@ -14,8 +14,8 @@ class ComputerLogic
 			elsif i >= 12
 				print "You stumped the Computer, good job!"
 				puts " "
+				end
 			end
-		end
 	end
 
 	def generate_guess(guess)

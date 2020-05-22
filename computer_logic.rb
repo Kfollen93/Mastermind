@@ -19,7 +19,7 @@ class ComputerLogic
 	end
 
 	def generate_guess(guess)
-		if guess.nil? #returns true on first loop, only executes once.
+		if guess.nil? #returns true on first loop.
 			4.times.map { Random.rand(1..6) }.to_a
 		else
 			guess.map.with_index do |num, index|

@@ -1,4 +1,3 @@
-
 class ComputerClues
     def self.exact_matches
         @temp_player_master = $player_master_array.clone

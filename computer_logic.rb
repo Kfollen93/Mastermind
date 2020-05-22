@@ -10,7 +10,7 @@ class ComputerLogic
 			puts " "
 			if $guess == $player_master_array
 				puts "The Computer cracked your code!"
-				break #Stops the upto method if you get the answer correct (before 12 times happen).
+				break #before 12 times happen
 			elsif i >= 12
 				print "You stumped the Computer, good job!"
 				puts " "
